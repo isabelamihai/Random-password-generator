@@ -1,28 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
-
-body{
-    margin:0;
-    font-family:'Inter', sans-serif;
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
+/* Mobile-first approach - Default for small screens */
 .container {
     max-width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    /* Centering content for small screens */
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
+    /* Reduced padding for small screens */
     background-color: #1C1C1C;
 }
 
 .rectangle {
     background-color: #ECFDF5;
-    width: 550px;
-    height: 550px;
+    width: 90%;
+    /* Makes the width flexible */
+    max-width: 550px;
+    /* Ensures it doesn't stretch too wide */
+    height: auto;
+    /* Allows the height to adjust based on content */
     margin: 0 auto;
-    padding: 64px;
+    padding: 20px;
+    /* Reduced padding for small screens */
 }
 
 * {
@@ -31,23 +38,29 @@ body{
 
 .title {
     color: #2B283A;
-    font-size: 40px;
+    font-size: 30px;
+    /* Smaller font size for small screens */
     font-weight: 800;
+    text-align: center;
+    /* Center title on small screens */
 }
 
 span {
     color: #10B981;
     content: " random password";
     font-family: 'Inter', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
+    /* Smaller font size for small screens */
     font-weight: 800;
-
 }
 
 .under-text {
     color: #6B7280;
-    font-size: 20px;
+    font-size: 16px;
+    /* Smaller font size for small screens */
     font-family: 'Karla', sans-serif;
+    text-align: center;
+    /* Center text for small screens */
 }
 
 #gen-el {
@@ -55,8 +68,15 @@ span {
     color: #ffffff;
     padding: 9px 15px;
     border-radius: 6px;
-    width: 191px;
+    width: 80%;
+    /* Makes the button more flexible on small screens */
+    max-width: 200px;
+    /* Limits the button's width */
     height: 42px;
+    font-size: 14px;
+    /* Slightly smaller font for small screens */
+    margin: 20px 0;
+    /* Adds space around the button */
 }
 
 hr {
@@ -69,8 +89,12 @@ hr {
 
 .pass-buttons {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
+    flex-direction: column;
+    /* Stack the buttons on small screens */
+    gap: 10px;
+    /* Smaller gap on small screens */
+    align-items: center;
+    /* Center the buttons */
 }
 
 #pass-random1,
@@ -78,8 +102,62 @@ hr {
     background-color: #273549;
     border-radius: 6px;
     color: #5DEF92;
-    width: 211px;
+    width: 80%;
+    /* Make buttons flexible on small screens */
+    max-width: 250px;
+    /* Limits button width */
     height: 39px;
-    font-size: 16px;
+    font-size: 14px;
+    /* Smaller font size for small screens */
     font-weight: 400;
+    margin: 5px 0;
+    /* Adds some space between buttons */
+}
+
+/* Media query for larger screens (tablets and desktops) */
+@media screen and (min-width: 600px) {
+    .container {
+        padding: 40px;
+        /* Larger padding for bigger screens */
+    }
+
+    .rectangle {
+        padding: 40px;
+        /* Larger padding for bigger screens */
+    }
+
+    .title {
+        font-size: 40px;
+        /* Larger title for larger screens */
+    }
+
+    span {
+        font-size: 40px;
+        /* Larger font size for larger screens */
+    }
+
+    .under-text {
+        font-size: 20px;
+        /* Larger font size for larger screens */
+    }
+
+    #gen-el {
+        width: 191px;
+        /* Reset button width for bigger screens */
+    }
+
+    .pass-buttons {
+        flex-direction: row;
+        /* Align buttons horizontally */
+        gap: 24px;
+        /* Larger gap between buttons */
+    }
+
+    #pass-random1,
+    #pass-random2 {
+        width: 211px;
+        /* Reset button width for bigger screens */
+        font-size: 16px;
+        /* Font size for larger screens */
+    }
 }
