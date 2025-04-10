@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+body{
+    margin:0;
+    font-family:'Inter', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    background-color: #1C1C1C;
+}
+
+.rectangle {
+    background-color: #ECFDF5;
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+    padding: 64px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    color: #2B283A;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+span {
+    color: #10B981;
+    content: " random password";
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+.under-text {
+    color: #6B7280;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+#gen-el {
+    background-color: #10B981;
+    color: #ffffff;
+    padding: 9px 15px;
+    border-radius: 6px;
+    width: 191px;
+    height: 42px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #D5D4D8;
+    margin: 24px auto;
+    width: 100%;
+}
+
+.pass-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+#pass-random1,
+#pass-random2 {
+    background-color: #273549;
+    border-radius: 6px;
+    color: #5DEF92;
+    width: 211px;
+    height: 39px;
+    font-size: 16px;
+    font-weight: 400;
+}
