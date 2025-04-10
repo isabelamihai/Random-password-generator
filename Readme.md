@@ -20,5 +20,5 @@ This app is a 2 password generator with max. 15 characters.
 ## Live link
 
 Vezi aplicatia live aici:
-![GhPages] - https://isabelamihai.github.io/Basketball-scorecard/
-![Netlify] - https://scorecard-mini-app.netlify.app/
+![GhPages] - https://isabelamihai.github.io/Random-password-generator/
+![Netlify] - https://mini-random-pass-generator.netlify.app/
