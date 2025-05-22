@@ -19,6 +19,6 @@ This app is a 2 password generator with max. 15 characters.
 
 ## Live link
 
-Vezi aplicatia live aici:
-![GhPages] - https://isabelamihai.github.io/Random-password-generator/
+Check the live app here:<br/>
+![GhPages] - https://isabelamihai.github.io/Random-password-generator/<br/>
 ![Netlify] - https://mini-random-pass-generator.netlify.app/
